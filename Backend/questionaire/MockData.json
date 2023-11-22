@@ -1,0 +1,80 @@
+[
+    {
+      "question": "What is the capital of France?",
+      "subject": "Geography",
+      "topic": "Countries and Capitals",
+      "difficulty": "Easy",
+      "marks": 3
+    },
+    {
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "subject": "Literature",
+      "topic": "Shakespearean Plays",
+      "difficulty": "Moderate",
+      "marks": 7
+    },
+    {
+      "question": "What is the chemical symbol for water?",
+      "subject": "Chemistry",
+      "topic": "Elements and Compounds",
+      "difficulty": "Easy",
+      "marks": 5
+    },
+    {
+      "question": "Solve for x: 2x + 5 = 15",
+      "subject": "Mathematics",
+      "topic": "Algebra",
+      "difficulty": "Moderate",
+      "marks": 8
+    },
+    {
+      "question": "Who discovered penicillin?",
+      "subject": "Biology",
+      "topic": "Medicine",
+      "difficulty": "Hard",
+      "marks": 10
+    },
+    {
+        "question": "What is the speed of light?",
+        "subject": "Physics",
+        "topic": "Waves",
+        "difficulty": "Easy",
+        "marks": 5
+      },
+      {
+        "question": "Name the largest planet in our solar system.",
+        "subject": "Astronomy",
+        "topic": "Planets",
+        "difficulty": "Moderate",
+        "marks": 6
+      },
+      {
+        "question": "In which year did World War II end?",
+        "subject": "History",
+        "topic": "World War II",
+        "difficulty": "Moderate",
+        "marks": 7
+      },
+      {
+        "question": "What is the formula for calculating the area of a rectangle?",
+        "subject": "Mathematics",
+        "topic": "Geometry",
+        "difficulty": "Easy",
+        "marks": 4
+      },
+      {
+        "question": "Who is the author of 'To Kill a Mockingbird'?",
+        "subject": "Literature",
+        "topic": "American Literature",
+        "difficulty": "Hard",
+        "marks": 9
+      },
+      {
+        "question": "What is the primary function of the kidneys in the human body?",
+        "subject": "Biology",
+        "topic": "Human Anatomy",
+        "difficulty": "Moderate",
+        "marks": 8
+      }
+  ]
+  

@@ -1,0 +1,47 @@
+body 
+{
+  font-family: 'Roboto', sans-serif;
+}
+.MainComponent 
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding:30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.questions 
+{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  gap:10px;
+}
+
+.badge
+{
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px;
+    border-radius:7px;
+    background-color: #28a745;
+}
+
+.subject 
+{
+  background-color: #007bff;
+}
+.topic
+{
+  background-color: #17a2b8;
+}
+
+.marks_lebel
+{
+  font-size: 15px;
+  float: right;
+  font-weight: bold;
+  color: #6c757d;
+}
