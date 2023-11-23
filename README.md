@@ -1,8 +1,45 @@
-# React + Vite
+## Question Paper Generator 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Description
+This is a simple javascript based web application which generates a question paper based on the input given by the user. The user can select the give the total marks of questions to be generated and the percentage of difficulty level . The questions are generated randomly from a database of questions. The user can also add questions to the database. The user can also download the question paper in pdf format.
 
-Currently, two official plugins are available:
+### Technologies Used
+* ReactJS
+* NodeJS
+* ExpressJS
+* ViteJS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
+* Clone the repository
+
+```bash
+git clone "https://github.com/Pursottam6003/question-paper-generator"
+
+```
+* Install the dependencies
+
+```bash
+npm install
+```
+
+* Run the frontend server
+
+```bash
+npm run dev
+```
+
+* Run the backend server
+
+```bash
+    npm start 
+```
+
+* Open the browser and go to localhost:5173
+
+### Screenshots
+
+
+![Screenshot (1)](https://user-images.githubusercontent.com/64744084/132098421-9b9b9b9b-9b9b-4b9f-8b9a-9b9b9b9b9b9b.png)
+
+
+

@@ -1,47 +1,132 @@
-body 
-{
+body {
   font-family: 'Roboto', sans-serif;
 }
-.MainComponent 
-{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    padding:30px;
-    flex-direction: column;
-    justify-content: center;
+
+.MainComponent {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.questions 
-{
+.questions {
   display: flex;
   flex-direction: row;
-  align-items:center;
-  gap:10px;
+  align-items: center;
+  gap: 10px;
 }
 
-.badge
-{
-    color:#fff;
-    font-size:12px;
-    font-weight:bold;
-    padding:4px;
-    border-radius:7px;
-    background-color: #28a745;
+.badge {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 7px;
+  background-color: #28a745;
 }
 
-.subject 
-{
+.subject {
   background-color: #007bff;
 }
-.topic
-{
+
+.topic {
   background-color: #17a2b8;
 }
 
-.marks_lebel
-{
+.marks_lebel {
   font-size: 15px;
   float: right;
   font-weight: bold;
   color: #6c757d;
+}
+
+.questionName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filterBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.filterInput {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  color: #495057;
+}
+
+
+
+.container {
+  padding-top: 5rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px hsla(0, 0%, 0%, 0.3);
+  padding: 0.8rem 0rem;
+  margin-bottom: 1.6rem;
+  outline: none;
+  font-size: 1.3rem;
+  line-height: 1;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus {
+  border-bottom: solid 1px hsla(0, 0%, 0%, 0.8);
+}
+
+h1 {
+  color: #333;
+  line-height: 1;
+  margin: 2rem 0 3rem;
+  font-size: 2.4rem;
+}
+
+.btn {
+  padding: 1.6rem 1.6rem 0.8rem 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 600;
+  background-color: white;
+  border: solid 1px rgb(40, 141, 195);
+  color: rgb(150, 46, 67);
+  text-align: left;
+  width: 50%;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background-color: rgb(22, 124, 188);
+  color: white;
+}
+
+.flex {
+  display: flex;
+  gap: 1.6rem;
 }
