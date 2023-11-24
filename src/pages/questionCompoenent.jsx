@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+
+const QuestionComponent = ({ sno, question, difficulty, subject, topic, marks }) => (
 
 
-const QuestionComponent = ({ question, difficulty, subject, topic, marks }) => (
-    <div className='questionBox'>
-        <div className='questions'>
-            <p className="questionName">{question}</p>
-            <p className='badge difficulty'>{difficulty}</p>
-            <p className='badge subject'>{subject}</p>
-            <p className='badge topic'>{topic}</p>
-        </div>
-        <span className='marks_lebel'> {marks} Marks</span>
-    </div>
-);
+    <tr className="table_row_data">
+        <td>{sno + 1}</td>
+        <td>{question}</td>
+        <td>{subject}</td>
+        <td>{topic}</td>
+        <td>
+            <span className={`difficulty-tag ${difficulty.toLowerCase()}`}>{difficulty}</span>
+        </td>
+        <td>{marks}</td>
+    </tr>
+
+
+)
+
 
 
 export default QuestionComponent;

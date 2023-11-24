@@ -17,8 +17,6 @@ const fetchQuestions = async (querry) => {
 const Questions = () => {
 
   const location = useLocation();
-
-
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState('all');
 
@@ -45,42 +43,64 @@ const Questions = () => {
 
   return (
     <>
-      <div className='MainComponent'>
 
-        <div className='questionBox'>
+      <div className='gridContainer'>
+        <div className='gridItem1'>
 
+          <table className="table table-hover responsive nowrap">
+
+            <thead>
+              <tr>
+                <th>Sno</th>
+                <th>Question Title</th>
+                <th>Subject</th>
+                <th>Difficulty</th>
+                <th>Topic</th>
+                <th>Marks</th>
+              </tr>
+
+            </thead>
+
+            {data.length === 3 ? {
+              'easy': data[0],
+              'medium': data[1],
+              'hard': data[2],
+              'all': data[0].concat(data[1], data[2])
+            }[filter].map((q, i) => {
+              return <QuestionComponent
+                key={i}
+                sno={i}
+                question={q.question}
+                difficulty={q.difficulty}
+                subject={q.subject}
+                topic={q.topic}
+                marks={q.marks}
+              />
+            }) : <h4>loading</h4>}
+
+
+
+          </table>
+        </div>
+
+        <div className='gridItem3'>
           <div className='filter'>
+            <p>Filter by difficulty</p>
             <div className='filterBox'>
-              <h1>Filters</h1>
-              <input type="radio" id="all" name="difficulty" value="all" onChange={() => setFilter('all')} />
-              <label htmlFor="difficulty">All</label><br />
-              <input type="radio" id="easy" name="difficulty" value="easy"
-                onChange={() => setFilter('easy')} />
-              <label htmlFor="subject">Easy</label><br />
-              <input type="radio" id="medium" name="difficulty" value="medium" onChange={() => { setFilter('medium') }} />
-              <label htmlFor="topic">Medium</label><br />
-              <input type="radio" id="hard" name="difficulty" value="hard" onChange={() => { setFilter('hard') }} />
-              <label htmlFor="marks">Hard</label><br />
+
+              <button className='rounded-btn' onClick={() => { setFilter('all') }}>all</button>
+              <button className='rounded-btn' id="all" name="difficulty" value="all" onClick={() => setFilter('easy')}  > easy</button>
+
+              <button className='rounded-btn' onClick={() => { setFilter('medium') }}>
+                medium
+              </button>
+
+              <button className='rounded-btn' onClick={() => { setFilter('hard') }}>hard</button>
 
             </div>
           </div>
-
-          {data.length === 3 ? {
-            'easy': data[0],
-            'medium': data[1],
-            'hard': data[2],
-            'all': data[0].concat(data[1], data[2])
-          }[filter].map((q, i) => {
-            return <QuestionComponent
-              key={i}
-              question={q.question}
-              difficulty={q.difficulty}
-              subject={q.subject}
-              topic={q.topic}
-              marks={q.marks}
-            />
-          }) : <h1>loading</h1>}
         </div>
+
       </div>
     </>
   )
