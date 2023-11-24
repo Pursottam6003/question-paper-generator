@@ -31,6 +31,8 @@ npm run dev
 * Run the backend server
 
 ```bash
+    cd Backend
+    npm install
     npm start 
 ```
 
@@ -38,8 +40,18 @@ npm run dev
 
 ### Screenshots
 
+1. Home Page
 
-![Screenshot (1)](https://user-images.githubusercontent.com/64744084/132098421-9b9b9b9b-9b9b-4b9f-8b9a-9b9b9b9b9b9b.png)
+![Home Page](image-1.png)
 
+Note : You can customise the percentage of questions by clicking on the sliders and then generate the question paper. or you can click on random button to select random percentage of difficulty 
 
+2. Question Paper
 
+In the question tab the user can filter the questions based on the difficulty level and the subject. The user can also add questions to the database.[to be implemented...]
+
+![question page](image-2.png)
+
+3. Filter Questions
+
+![filtered image](image-3.png)
