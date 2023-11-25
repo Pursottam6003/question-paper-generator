@@ -1,18 +1,15 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import QuestionComponent from './questionCompoenent'
-import { useNavigate } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
 const fetchQuestions = async (querry) => {
   const q = Object.keys(querry).map(key => key + '=' + querry[key]).join('&');
-  const response = await fetch('http://localhost:5000/questions?' + q);
+  const response = await fetch('https://server-question-paper.onrender.com/questions?' + q);
   const data = await response.json();
   console.log(data);
   return data;
 }
-
-
 
 const Questions = () => {
 
