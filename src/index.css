@@ -345,3 +345,31 @@ tr {
 .difficulty-tag.hard {
   background-color: #dc3545;
 }
+
+.layout-main {
+  padding: 2rem 0;
+}
+
+.error {
+  padding: 0 2rem;
+  margin: 2rem auto;
+  /* max-width: 400px; */
+  width: 100%;
+}
+
+.info-icon {
+  fill: blue;
+  width: 48px;
+  height: 48px;
+}
+
+.error-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.icon-wrapper {
+  width: fit-content;
+  margin: auto;
+}

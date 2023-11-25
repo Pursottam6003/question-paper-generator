@@ -52,7 +52,7 @@ const RangeInputs = ({ distribution, setDistribution, totalRange = 100 }) => {
 
     return (
         <div>
-            <label>Easy: {easy}</label>
+            <label>Easy {easy} %</label>
             <input
                 type="range"
                 value={easy}
@@ -61,7 +61,7 @@ const RangeInputs = ({ distribution, setDistribution, totalRange = 100 }) => {
                 onChange={(e) => handleSlider1Change(Number(e.target.value))}
             />
 
-            <label>Medium: {medium}</label>
+            <label>Medium {medium} % </label>
             <input
                 type="range"
                 name='easy'
@@ -71,7 +71,7 @@ const RangeInputs = ({ distribution, setDistribution, totalRange = 100 }) => {
                 onChange={(e) => handleSlider2Change(Number(e.target.value))}
             />
 
-            <label>Hard: {hard}</label>
+            <label>Hard  {hard} %</label>
             <input
                 type="range"
                 step={1}

@@ -23,7 +23,7 @@ const Rangeslider = ({ slider1, setSlider1, slider2, setSlider2, slider3, setSli
 
     return (
         <div>
-            <label>Easy: {slider1}</label>
+            <label>Easy %: {slider1}</label>
             <input
                 type="range"
                 value={slider1}
@@ -31,7 +31,7 @@ const Rangeslider = ({ slider1, setSlider1, slider2, setSlider2, slider3, setSli
                 onChange={(e) => handleSlider1Change(Number(e.target.value))}
             />
 
-            <label>Medium: {slider2}</label>
+            <label>Medium %: {slider2}</label>
             <input
                 type="range"
                 value={Math.max(0, slider2)}
@@ -39,7 +39,7 @@ const Rangeslider = ({ slider1, setSlider1, slider2, setSlider2, slider3, setSli
                 onChange={(e) => handleSlider2Change(Number(e.target.value))}
             />
 
-            <label>Hard: {slider3}</label>
+            <label>Hard %: {slider3}</label>
             <input
                 type="range"
                 value={Math.max(0, slider3)}

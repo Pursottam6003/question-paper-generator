@@ -3,6 +3,10 @@
 ### Description
 This is a simple javascript based web application which generates a question paper based on the input given by the user. The user can select the give the total marks of questions to be generated and the percentage of difficulty level . The questions are generated randomly from a database of questions. The user can also add questions to the database. The user can also download the question paper in pdf format.
 
+### Live Demo
+Please check the link [Question Paper Generator](https://question-paper-generator.netlify.app/)
+
+Note : The backend server is hosted on onrender.com so it may take some time to load the questions.
 ### Technologies Used
 * ReactJS
 * NodeJS
