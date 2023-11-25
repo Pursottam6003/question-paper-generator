@@ -6,7 +6,10 @@ This is a simple javascript based web application which generates a question pap
 ### Live Demo
 Please check the link [Question Paper Generator](https://generate-question-paper.netlify.app/)
 
-Note : The backend server is hosted on onrender.com so it may take some time to load the questions.
+>**Note:** The backend server is hosted on onrender.com so it may take some time to load the questions.
+
+![Alt text](image-4.png)
+
 ### Technologies Used
 * ReactJS
 * NodeJS
@@ -46,16 +49,15 @@ npm run dev
 
 1. Home Page
 
-![Home Page](image-1.png)
+    ![Home Page](image-1.png)
 
-Note : You can customise the percentage of questions by clicking on the sliders and then generate the question paper. or you can click on random button to select random percentage of difficulty 
+    >**Note:** You can customise the percentage of questions by clicking on the sliders and then generate the question paper. or you can click on random button to select random percentage of difficulty 
 
 2. Question Paper
 
-In the question tab the user can filter the questions based on the difficulty level and the subject. The user can also add questions to the database.[to be implemented...]
+    In the question tab the user can filter the questions based on the difficulty level and the subject. The user can also add questions to the database.[to be implemented...]
 
-![question page](image-2.png)
-
+    ![Alt text](image-5.png)
 3. Filter Questions
 
-![filtered image](image-3.png)
+    ![filtered image](image-3.png)
